@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>vBots - Digital-Assistant</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-iframe-component@1.0.0/dist/aframe-iframe-component.min.js"></script>
-  </head>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-iframe-component@1.0.0/dist/aframe-iframe-component.min.js"></script>
+</head>
   <body>
     <a-scene>
       <a-sky color="#FFFFFF"></a-sky>
-      
       <!-- Full-Screen Image 2 (Back) -->
       <a-plane src="#image2" position="0 1.6 10" rotation="0 180 0" width="20" height="11.2"></a-plane>
       
@@ -19,26 +18,36 @@
       <!-- Full-Screen Image 4 (Right) -->
       <a-plane src="#image4" position="10 1.6 0" rotation="0 -90 0" width="20" height="11.2"></a-plane>
       
-      <a-plane src="#image5" position="10 1.6 0" rotation="90 0 0" width="20" height="11.2"></a-plane>
+      <a-plane src="#image5" position="0 -1.6 0" rotation="-90 0 0" width="10" height="10"></a-plane>
+
+      <a-plane src="#imageTop" position="0 11 -10" rotation="90 0 0" width="20" height="10"></a-plane>
+
       <a-video src="#video" position="0 1.6 -10" width="20" height="11.2"></a-video>
-      <a-video src="#videoTop" position="1.6 10 0" rotation="-90 0 0" width="20" height="11.2"></a-video>
-      <a-box position="0 1.6 -5" depth="1" height="1" width="1" 
+      <!-- <a-video src="#videoTop" position="1.6 10 0" rotation="-90 0 0" width="20" height="11.2"></a-video> -->
+      <!-- <a-iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1" 
+        position="1.6 10 0" 
+        width="20" 
+        height="11.2" 
+        rotation="-90 0 0">
+      </a-iframe> -->
+      <!-- <a-box position="0 1.6 -5" depth="1" height="1" width="1" 
              material="src: #boxImage; color: #FFFFFF"
              animation="property: position; to: 0 1.6 0; dur: 4000; easing: easeInOutQuad">
-      </a-box>
+      </a-box> -->
 
 
       <!-- Assets for images and video -->
       <a-assets>
         <img id="image1" src="https://picsum.photos/seed/picsum/200/300" crossorigin="anonymous">
-        <img id="image2" src="https://rpabd.eleviant.com/assets/images/dashboard.png"crossorigin="anonymous">
-        <img id="image3" src="https://rpabd.eleviant.com/assets/images/bot_store_home_page.png" crossorigin="anonymous">
-        <img id="image4" src="https://rpabd.eleviant.com/assets/images/botrunhistory.png" crossorigin="anonymous">
-        <img id="image5" src="https://m.media-amazon.com/images/I/71DYK39amhL.SS700.jpg" crossorigin="anonymous">
-        <img id="boxImage" src="https://catalyit.com/wp-content/uploads/2024/06/vBots-Digital-Assistant.png" crossorigin="anonymous">
-        <video id="video" src="https://rpabd.eleviant.com/assets/images/Directbillcommission.mp4" autoplay loop crossorigin="anonymous"></video>
-        <video id="videoTop" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" autoplay loop crossorigin="anonymous"></video>
-        <video id="videoBottom" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"  autoplay loop crossorigin="anonymous"></video>
+        <img id="image2" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots - Dashboard.png" crossorigin="anonymous">
+        <img id="image3" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-AI.PNG" crossorigin="anonymous">
+        <img id="image4" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-Marketplace.png" crossorigin="anonymous">
+        <img id="image5" src="https://catalyit.com/wp-content/uploads/2024/08/vBots-by-Eleviant.png" crossorigin="anonymous">
+        <img id="imageTop" src="https://catalyit.com/wp-content/uploads/2024/08/vBots-by-Eleviant.png" crossorigin="anonymous">
+        <video id="video" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/AppliedEpic-DBReconbot.mp4" autoplay crossorigin="anonymous"></video>
+        <!-- <video id="videoTop" src="https://drive.google.com/uc?export=download&id=1iP5RqdlREx_YbP-5RZqo7fB1rElQ2igi" autoplay loop crossorigin="anonymous"></video>
+        <video id="videoBottom" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"  autoplay loop crossorigin="anonymous"></video> -->
       </a-assets>
       
       <!-- Camera and cursor for VR interaction -->
@@ -71,3 +80,4 @@
       </script>
   </body>
 </html>
+
