@@ -10,13 +10,13 @@
     <a-scene>
       <a-sky color="#FFFFFF"></a-sky>
       <!-- Full-Screen Image 2 (Back) -->
-      <a-plane src="#image2" position="0 1.6 10" rotation="0 180 0" width="20" height="11.2"></a-plane>
+      <a-video src="#image2" position="0 1.6 10" rotation="0 180 0" width="20" height="11.2"></a-video>
       
       <!-- Full-Screen Image 3 (Left) -->
-      <a-plane src="#image3" position="-10 1.6 0" rotation="0 90 0" width="20" height="11.2"></a-plane>
+      <a-video src="#image3" position="-10 1.6 0" rotation="0 90 0" width="20" height="11.2"></a-video>
       
       <!-- Full-Screen Image 4 (Right) -->
-      <a-plane src="#image4" position="10 1.6 0" rotation="0 -90 0" width="20" height="11.2"></a-plane>
+      <a-video src="#image4" position="10 1.6 0" rotation="0 -90 0" width="20" height="11.2"></a-video>
       
       <a-plane src="#image5" position="0 -1.6 0" rotation="-90 0 0" width="10" height="10"></a-plane>
 
@@ -40,9 +40,9 @@
       <!-- Assets for images and video -->
       <a-assets>
         <img id="image1" src="https://picsum.photos/seed/picsum/200/300" crossorigin="anonymous">
-        <img id="image2" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots - Dashboard.png" crossorigin="anonymous">
-        <img id="image3" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-AI.PNG" crossorigin="anonymous">
-        <img id="image4" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-Marketplace.png" crossorigin="anonymous">
+        <video id="image2" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-AI.mp4" autoplay loop crossorigin="anonymous"></video>
+        <video id="image3" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-dashboard.mp4" autoplay loop crossorigin="anonymous"></video>
+        <video id="image4" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-botstore.mp4" autoplay loop crossorigin="anonymous"></video>
         <img id="image5" src="https://catalyit.com/wp-content/uploads/2024/08/vBots-by-Eleviant.png" crossorigin="anonymous">
         <img id="imageTop" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-Clients.png" crossorigin="anonymous">
         <video id="video" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/AppliedEpic-DBReconbot.mp4" autoplay crossorigin="anonymous"></video>
