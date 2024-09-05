@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>vBots</title>
+  <title>Video</title>
   <meta name="description" content="vBots - Digital Assistant">
   <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
   <script>
@@ -68,7 +68,7 @@
 
     <a-plane src="#image5" position="0 -1.6 0" rotation="-90 0 0" width="10" height="10"></a-plane>
 
-    <a-plane src="#imageTop" position="0 11 -10" rotation="90 0 0" width="30" height="11"></a-plane>
+    <a-video src="#imageTop" position="0 11 -10" rotation="90 0 0" width="30" height="11"></a-video>
 
     <a-video src="#imagemain" position="0 1.6 -10" width="20" height="11.2"></a-video>
     <a-assets>
@@ -81,7 +81,9 @@
       <video id="imagemain" preload="auto" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/AppliedEpic-DBReconbot.mp4" width="20" height="11.2"
         autoplay loop="true" crossOrigin="anonymous"></video>
       <img id="image5" src="https://catalyit.com/wp-content/uploads/2024/08/vBots-by-Eleviant.png" crossorigin="anonymous">
-      <img id="imageTop" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-Clients.png" crossorigin="anonymous">
+      <video id="imageTop" preload="auto" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/AppliedEpic-Carriers.mp4" width="30" height="11.2"
+        autoplay loop="true" crossOrigin="anonymous"></video>
+      <!-- <img id="imageTop" src="https://vbotsfilestorage.blob.core.windows.net/appliednet/vBots-Clients.png" crossorigin="anonymous"> -->
     </a-assets>
 
     <a-entity material="shader: flat; src: #imageback" geometry="primitive: plane; width: 20; height: 11.2;"
@@ -95,6 +97,9 @@
     </a-entity>
     <a-entity material="shader: flat; src: #imagemain" geometry="primitive: plane; width: 20; height: 11.2;"
       position="0 1.6 -10" play-on-click visible="false">
+    </a-entity>
+    <a-entity material="shader: flat; src: #imageTop" geometry="primitive: plane;"
+      position="0 11 -10" play-on-click visible="false">
     </a-entity>
     <a-entity material="shader: flat; src: #videoFireworks" geometry="primitive: plane; width: 160; height: 90"
       position="0 -60 -200" rotation="0 -35 0" play-on-click visible="false">
